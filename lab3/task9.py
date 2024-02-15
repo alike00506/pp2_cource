@@ -1,4 +1,7 @@
-class MyClass:
-  x = 5
+def sphere_volume(radius):
+    volume = (4 / 3) * 3.14 * radius**3
+    return volume
 
-p1 = MyClass()
+radius = float(input())
+result = sphere_volume(radius)
+print( result)

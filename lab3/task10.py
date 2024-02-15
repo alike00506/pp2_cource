@@ -1,6 +1,14 @@
-class MyClass:
-  x = 5
+def unique_elements(input_list):
+    unique_list = []
 
-p1 = MyClass()
+    for element in input_list:
+        if element not in unique_list:
+            unique_list.append(element)
 
-print(p1.x)
+    return unique_list
+
+
+original_list = [1, 2, 2, 3, 4, 4, 5]
+result = unique_elements(original_list)
+print( original_list)
+print( result)
